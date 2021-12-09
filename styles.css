@@ -1,14 +1,12 @@
 body {
     margin: 0;
     padding: 0;
-    background: url(Kas.jpg);
     background-position: center;
     font-family: sans-serif;
     background-repeat: no-repeat;
-    
     background-size: cover;
     background-position: center;
-    height: 
+    background-image: url(x.jpg);
 
 
 
@@ -30,14 +28,14 @@ img {
     height: 500px;
     background: rebeccapurple;
     color: yellowgreen;
-    top: 70%;
+    top: 50%;
     right: 20%;
     position: absolute;
     transform: translate(-50%,-50%);
     box-sizing: border-box;
     border-radius: 20px;
     padding: 70px 30px;
-    background-color: aqua;
+    background-color: black;
 }
 
 .logo {
@@ -66,17 +64,6 @@ h1 {
     width: 80%;
 }
 
-.Loginbox input[type="text"]; input[type="password"]
-{
-    border: none;
-    border-bottom: 1px solid #fff;
-    background: greenyellow;
-    outline: none;
-    height: 40px;
-    color: #fff;
-    font-size: 16px;
-   
-}
 
 
 .Loginbox input[type="submit"]
@@ -114,5 +101,5 @@ h1 {
 }
 
 h2 {
-    color: black;
+    color: whitesmoke;
 }
