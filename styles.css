@@ -6,22 +6,14 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-image: url(x.jpg);
+
+ 
 
 
 
 }
 
 
-img {
-    width: 200px;
-    border-radius: 100px;
-    float: none;
-    flex: auto;
-    justify-content: center;
-    position: absolute;
-    
-}
 
 .Loginbox {
     width: 500px;
@@ -36,14 +28,6 @@ img {
     border-radius: 20px;
     padding: 70px 30px;
     background-color: black;
-}
-
-.logo {
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    top: -85px;
-    right: calc(100% 50px);
 }
 
 h1 {
