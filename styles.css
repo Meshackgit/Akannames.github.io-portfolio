@@ -20,10 +20,9 @@ body {
 
 
 
-.Form {
+.Form-fluid {
     width: 500px;
-    height: 500px;
-    background: rebeccapurple;
+    height: 650px;
     color: yellowgreen;
     top: 50%;
     right: 20%;
@@ -42,20 +41,20 @@ h1 {
     font-size: 20px;
 }
 
-.Form p {
+.Form-fluid p {
     margin: 0;
     padding: 0;
     font-weight: bold;
 }
 
-.Form input {
+.Form-fluid input {
     margin-bottom: 20px;
     width: 80%;
 }
 
 
 
-.Form input[type="submit"]
+.Form-fluid input[type="submit"]
 {
     border: none;
     outline: none;
@@ -65,7 +64,7 @@ h1 {
     border-radius: 20px;
 }
 
-.Form input[type="submit"]:hover
+.Form-fluid input[type="submit"]:hover
 {
     cursor: pointer;
     background: green;
@@ -77,7 +76,7 @@ h1 {
 }
 
 
-.Form a:hover {
+.Form-fluid a:hover {
     color: green;
 
 }
@@ -86,12 +85,17 @@ h2 {
     color: whitesmoke;
 }
 
-@media screen and (max-device-width: 480px)
-and (orientation: portrait) {
-    width: 200px;
-    height: 200px;
-    background-color: red;
-    color: #fff;
+@media screen and (max-device-width: 480px){
+    .Form-fluid {
+        position: absolute;
+        transform: translate(-50%,-50%);
+        box-sizing: border-box;
+        border-radius: 20px;
+        padding: 70px 30px;
+        background-color: black;
+    }
+    }
+}
   }
 
  img{
