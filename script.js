@@ -16,6 +16,29 @@ let femaleName = ["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
         alert ('You Bere Born On' + dtString + 'Your Aan Name Would Be' + Name)
     }
     else if (gender =='female'){
-        let Name = femaleName
+        let Name = femaleName[brthDate]
+        alert('You Were Born On' + dtString + 'Your Akan Name Would Be' + Name)
+        
     }
- }
+    //Incase the user stupidly or mistakenly fails to input all the required details Js will help me correct them//
+    alert('You Have Not Filled All The Details Please Revisit The Form And Submit')
+//wrong Day input//
+if( Day > 31 || Day < 1){
+    alert('Invalid Date Input')
+}
+//wrong Month input//
+if(Month > 12 || Month < 1){
+    alert('Invalid Month Input')
+}
+
+}
+ 
+//To refresh the inputs after the user has filled in the form//
+function formRefresher(){
+    dovu
+}
+
+
+
+
+
