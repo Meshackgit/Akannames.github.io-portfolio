@@ -1,5 +1,5 @@
 
-   var maleName = ["Kwasi","Kwadmo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
+   /*var maleName = ["Kwasi","Kwadmo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
     var femaleName = ["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
     function  Submit(){
         var year = document.getElementById("Year").value;
@@ -39,8 +39,54 @@
 
     
 
-   alert('You wewre born on a monday you Akan Name is Mwangi ');
+   alert('You wewre born on a monday you Akan Name is Mwangi ');*/
+
+    // Function to refresh the form after submition
+function formRefresher(){
+    document.getElementById("refresh").reset();
+}
+
+// Event function on button
+function Submit(){
+
+    var birthDate=document.getElementById("Date").value;
+    var dateEntered= birthDate.split("-");
+    var day=parseInt(dateEntered[2]);
+    var month=parseInt(dateEntered[1]);
+    var year=parseInt(dateEntered[0]);
+
+    //Centuary calculation
+    var centry=(year-1)/100+1; 
+    var dayOfTheWeek = ( centry/4 -2*centry-1 + 5*year/4  + 26*(month+1)/10 + day ) % 7;
+        
+    document.getElementById("display").innerHTML=Math.round(dayOfTheWeek);
+    var femaleNames=["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
+    var maleNames=["Kwasi"," Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
+    var gender=document.getElementById("gender").value;
+    var daysOfWeek=["Sunday", "Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+    var dOfWeek = Math.round(dayOfTheWeek)
+
+    //form validation and output
+    if(!isNaN(dOfWeek)){
+        if(gender=="Male"){
+        alert("Your akan names is"+ maleNames[Math.round(dayOfTheWeek)]+"  you were born on "+ daysOfWeek[dOfWeek]);
+        }
+        else if(gender==="Female"){
+        alert("You were born on "+daysOfWeek[dOfWeek]+ " and Your akan name is " + femaleNames[Math.round(dayOfTheWeek)]);
+        }else{
+            alert("Enter valid dates and choose your gender");
+            document.getElementById("display").innerHTML="";
+        }
+    }
+            else{
+                alert("Enter valid birthday and choose your gender");
+            
+            }
     
+    
+    //call to the reFresh function
+    formRefresher();
+}
 
     
 
