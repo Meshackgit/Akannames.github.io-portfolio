@@ -1,32 +1,62 @@
-<!DOCTYPE html>
+
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="log.jpg">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title> Akan names project </title>
+     <head>
+     <script src="JS script.js"></script>
+            
+            <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
-<body>
-  <img src="5.jpeg" alt="Hands">
-    <div class="Form-fluid">
-        <h1>Akan Names Generator</h1>
-        <form id="refresh">
-          <div>
-            <h2>THIS IS AN AKAN NAMES WEBSITE.<br>FIND OUT WHAT YOUR AKAN NAME WOULD BE BY PROVIDING YOUR<br>BIRTHDATES AND GENDER DETAILS.<br>HAVE FUN!!</h2>
+ <body>
+          <div class="container">
+              <div class="jumbotron">
+                  <h1>Akan Names Generator</div>  
+        
+              <div class="row">
+                 
+               
+              </div>
+                    <div class="col-md-4">
+                        <h2>Thi is an awesome website that gives you ana experience with a Ghananian tribe,Akan, by giving you an Akan name and the day of your birth all in one line.Have fun exploring!!!!</h2>
+                   </div>
+              </div>
+              <div class="space"></div>
+              
+              <!--The user input form-->
+              <form id="form_data"  class="form row">
+             
+                      <div class="form-group row">
+                            <p class="label-control ">Enter your date of birth:</p>
+                            <input class="form-control form-control-sm col-md-6" type="date" id="birthdate" value="" placeholder="Enter your dateofbirth"><br/>    
+                      </div>                       
+                 
+                        <div class="form-group row">
+                            <p>Choose your gender:</p>
+                            <select id="gender" class="form-control form-control-sm">
+                                <option>Choose your gender</option>
+                                <option>Male</option>
+                                <option>Female</option><br>
+                            </select>
+                        </div><br>
+                        <div class="row2">
+                        
+                            <button type="button" class="btn btn-success btn-sm" value="submit" onclick="akanNames()">submit</button>
+                        
+                        </div>
+                            <!-- Result output -->
+                    
+                            <p id="display" class="col-md-12"></p>
+       
+                </form>
+               
           </div>
-          <p>Year</p>
-            <input id="Year" type="text" name="" placeholder="Enter Year"essential>
-            <p>Month</p>
-            <input id="Month" type="text" name="" placeholder="Enter Month"essential>
-            <p>Date</p>
-            <input id="Date" type="text" name="" placeholder="Enter Date"essential>
-            <P>Gender</P>
-            <input type="Gender" class="form-control" id="inputGender" placeholder="Gender"essential>
-             <input type="submit" name="" value="Submit" onclick="submit()">
-         </form>
-    </div>
-    <script src="script.js"></script>
-   </body>
+          
+      
+            
+            <script src="script.js"></script>
+ </body>
 </html>
